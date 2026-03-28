@@ -1,0 +1,29 @@
+### 1. REGISTRO (Hazlo primero)
+POST http://localhost:3001/api/auth/registro
+Content-Type: application/json
+
+{
+  "nombre": "Alex Macia",
+  "email": "mhurtado5713@gmail.com",
+  "contraseña": "1234" 
+}
+###
+
+### 2. LOGIN (Hazlo después)
+POST http://localhost:3001/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "mhurtado5713@gmail.com",
+  "contraseña": "1234"
+}
+### PRUEBA: CREAR MI PRIMER ATLETA
+POST http://localhost:3001/api/clientes
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Mzk3MDQ3LCJlbWFpbCI6Im1odXJ0YWRvNTcxM0BnbWFpbC5jb20iLCJub21icmUiOiJBbGV4IE1hY2lhIiwiaWF0IjoxNzc0NjcxNTk1LCJleHAiOjE3NzQ3NTc5OTV9.pDy1e2p8f3496d83mKeEgxJISXhAKY3kACD0KcLVq20
+
+{
+  "nombre": "Juan Entrenando",
+  "email": "juan_atleta@gmail.com",
+  "plan": "Pro"
+}
